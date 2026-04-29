@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F2D0D0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 350px;
+    background-image: url(/img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header img{
+    width: 500px;
+    margin: 0;
+}
+
+header p{
+    display: flex;
+    color: #592C22;
+    font-style: oblique;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    top: 20px;
+    position: relative;
+    padding: 25px;
+    text-shadow: 4px 2px 1px rgba(0, 0, 0, 0.452);
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #0D0D0D;
+    padding: 10px;
+}
+
+header nav a:hover{
+    background-color: #fac5ff;
+    color: #0D0D0D;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 850px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f8c98f77;
+    text-align: justify;
+    border-radius: 0px 0px 10px 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.466);
+}
+
+main h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: #0D0D0D;
+    padding: 35px;
+    text-shadow: 4px 4px 8px rgba(5, 0, 0, 0.466);
+}
+
+main p{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #000000;
+    padding: 25px;
+    text-indent: 5em;
+}
+
+main h2{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #0D0D0D;
+    padding: 25px;
+    text-shadow: 4px 4px 8px rgba(5, 0, 0, 0.466);
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0px 0px 0px 50px;
+}
+
+main ul li{
+    color: #0D0D0D;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+main ol{
+    display: block;
+    padding: 25px;
+    list-style-type: decimal;
+    color: #0D0D0D;
+    font-size: 1.2em;
+    transition: 0.5s ease-in-out;
+}
+
+main ol li{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+aside{
+    display: block;
+    padding: 20px;
+    max-width: 850px;
+    width: 90%;
+    margin: auto;
+    background-color: #592c222f;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.466);
+}
+
+aside h2{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #0D0D0D;
+    padding: 25px;
+    text-shadow: 4px 4px 10px rgba(5, 0, 0, 0.4);
+}
+
+aside p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000305;
+    padding: 5px;
+    text-indent: 5em;
+    text-align: justify;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0px 0px 0px 50px;
+}
+
+aside ul li{
+    color: #0D0D0D;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+aside a{
+    display: inline-flex;
+    margin: 0 auto;
+    list-style-type: none;
+    text-decoration: none;
+    color: #592C22;
+    background: #fac5ff;
+    font-size: 1.2em;
+    font-weight: 500;;
+    padding: 10px;
+}
+
+aside a:hover{
+    color: #fac5ff;
+    background: #592C22
+}
+
+footer{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #1e90ff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.466);
+}
