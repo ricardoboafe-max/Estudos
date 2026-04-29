@@ -9,7 +9,7 @@
 body{
     font-family: "Roboto", sans-serif;
     background-color: #f4f7f9;
-
+    margin: 0 auto;
 }
 
 header{
@@ -30,29 +30,173 @@ header h1{
     position: absolute;
     margin: auto;
     padding: 50px;
-    top: center
-    color: #FFCC00;
-    
+    top: 150px;
+    left: 50%;
+    text-align: center;
+    color: #00AEEF;
+    text-shadow: 4px 4px 4px #00000080;
 }
 
 header .menu{
     position: absolute;
-    top: 350px;
-    padding: 25px;
+    top: 300px;
+    padding: 50px;
 }
 
 header a{
     color: white;
-    margin: 5px;
-    font-size: 1.2em;
+    margin: 25px;
+    font-size: 1.8em;
     text-decoration: none;
     
 }
 
 header a:hover{
     background-color: #00AEEF;
-    padding: 5px;
-    text-decoration: underline;
+    padding: 15px;
     font-style: bold;
-    transition: 0.5s;
+    transform: scale(2.0)
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+main .banner{
+    max-width: 850px; 
+    width: 80%;
+    margin: auto;
+}
+main .banner img{
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 4px 4px 4px #00000080;
+}
+
+main .servicos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+main .servicos h2{
+    font-size: 2.5em;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+}
+main .servico{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+main .servico img{
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #00000080;
+}
+main .servico h3{
+    font-size: 1.8em;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+main .servico p{
+    font-size: 1.5em;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+main .sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+main .sobre h2{
+    font-size: 2.5em;
+    text-align: center;
+    color: #003366;
+}
+
+main .sobre img{
+    width: 150px;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 4px 4px 4px #00000080;
+}
+
+main .sobre p{
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 150px;
+    color: #003366;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+footer .contato{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding: 25px;
+    font-size: 1.5em;
+    background-color: #035bb3;
+}
+
+footer .contato h2{
+    font-size: 2em;
+    color: #00AEEF;
+    padding: 25px;
+    text-align: center;
+    text-shadow: 4px 4px 4px #00000094;
+}
+
+footer .contato p {
+    margin: 15px;
+    font-size: 1.2em;
+    color: #fae386;
+    text-align: center;
+}
+
+footer a{
+    position: relative;
+    margin: 2px ;
+    background-color: #00AEEF;
+    color: #f4f7f9;
+    text-decoration: none;
+    padding: 5px;
+    left: 40%;
+}
+
+footer a:hover{
+    background-color: #f4f7f9;
+    color: #00AEEF;
+    transform: scale(2.0);
+    transition: 0.4s;
+}
+
+footer .copyright{
+    background-color: #003366;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
 }
