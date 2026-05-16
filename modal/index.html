@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicom2.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/Logo-semFundo.png" alt="Logo">
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <a href="#">FAQ</a>
+        </nav>
+        <button onclick="openLoginModal()" id="open-modal">Login</button>
+    </header>
+    <main>
+        <dialog id="login-modal">
+            <div class="login-container">
+                <div class="login-img">
+                    <img src="img/logo2.png" alt="Login Image">
+                    <h1>Transformando <span>Café</span><br> em código</h1>
+                </div>
+                <div class="login-input">
+                    <h2>Login</h2>
+                    <button id="close-modal">X</button>
+                    <form action="#" method="post">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Entrar</button>
+                        <a href="#">Esqueceu sua senha?</a>
+                        <a href="#">Não tem uma conta? Cadastre-se</a>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ricardo Leite| Desenvolvedor Web. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

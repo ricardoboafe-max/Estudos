@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img/cafe3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-bottom: 1px solid rgb(71, 70, 70);
+
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.logo h1{
+    flex-direction: row;
+    margin-left: 10px;
+    color: #f89520;
+    font-size: 1.6em;
+    padding: 14px;
+}
+
+.navbar{
+    justify-content: flex-end;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all ease .5s;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.navbar a:hover{
+    color: #f89520;
+    background-color: rgba(30, 143, 255, 0.384);
+    border-radius: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height:86vh;
+}
+
+.slogan{
+    min-width: 150px;
+    max-width: 460px;
+    padding: 24px;
+}
+
+.slogan h1{
+    color: white;
+    font-size: 2.3em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+}
+
+.slogan span{
+    color: #f89520;
+    font-size: 1.7em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+}
+
+.slogan p{
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 24px 0;
+}
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    border: .1px solid #ffffff3f;
+    background-color: #ffffff2d;
+    backdrop-filter: blur(25px);
+}
+
+.container-login h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    color: #ffffff;
+    font-size: 2.3em;
+    text-shadow: 4px 4px 12px dodgerblue;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.2em;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+}
+
+.input input{
+    width: 100%;
+    font-size: .9em;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    outline: none;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 150px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 20px auto 0 auto;
+}
+
+button:hover{
+    background-color: #1e70e6;
+    color: #f89520;
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+}
+
+.registre-link{
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 4px 4px 12px black
+}
+
+.registre-link a{
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 4px 4px 12px black;
+    transition: all .3s ease;
+}
+
+.registre-link a:hover{
+    color: #f89520;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: auto;
+}
+
+footer img{
+    width: 35px;
+    padding: 0 0 0 15px;
+    color: #ffffff;
+}
