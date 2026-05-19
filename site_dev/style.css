@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Ajuste este valor para a altura do seu menu */
+  scroll-padding-top: 100px; /* Ajuste este valor para a altura do seu menu */
 }
 
 body{
@@ -18,7 +19,7 @@ body{
     background-attachment: fixed;
     color: #000000;
     max-width: 100%;
-    min-width: 360px;
+    min-width: 320px;
     min-height: 100vh;
 }
 
@@ -30,6 +31,8 @@ header{
     justify-content: space-evenly;
     position: fixed;
     width: 100%;
+    min-width: 320px;
+    max-width: 100%;
     background-color: #003366cc;
     padding: 0 20px;
     border-bottom: 1px solid #d3d7da5d;
@@ -121,6 +124,17 @@ nav ul li a:hover{
     transform: scale(1.05);
     box-shadow: 4px 4px 6px rgba(245, 240, 240, 0.2);
 }
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 main{
     display: flex;
@@ -285,19 +299,38 @@ h2{
     padding-bottom: 15px;
 }
 
-.faixa{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px 50px;
+.faixa-contianer{
+    position: fixed;
+    top: 100px;
+    padding: 15px 0px;
     width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
     background-color: #11395949;
     border: #f4f7f936 solid 1.5px;
-    color: #F4F7F9 ;
+    color: #00AEEF;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    z-index: 980;
+}
+
+.faixa-texto {
+  display: inline-block;
+  padding-left: 100%;
+  color: #00AEEF;
+  font-size: 1.4em;
+  font-weight: bold;
+  animation: moverTexto 13s linear infinite;
+}
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .area1{
@@ -741,3 +774,12 @@ footer img:hover{
     transform: translateY(-10px);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.menu {
+    display: flex;
+}
+
+/* Estilo que entra em ação para celulares */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Coloca os itens do menu um abaixo do outro *
